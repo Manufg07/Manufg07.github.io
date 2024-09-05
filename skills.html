@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manu|About</title>
+    <title>Manu | About</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
       body {
@@ -21,7 +21,7 @@
         padding: 20px;
         background-color: #081b29;
         border: 1px solid #ccc;
-        width: 45%;
+        width: 60%;
         max-width: 800px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -33,19 +33,42 @@
         margin-top: 0;
         text-align: center;
         color: white;
-        /* color: #333; */
       }
-      pre {
-        margin: 0;
-        color: #e4cdcd;
-        font-size: larger;
-      }
+
       .education-item {
         border: 1px solid #ccc;
         border-radius: 5px;
-        padding: 10px;
+        padding: 20px;
         background-color: #00abf0;
         margin-bottom: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      .education-item span {
+        background-color: #f4f4f4;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 16px;
+        flex: 1 1 calc(25% - 20px);
+        margin: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Responsive for smaller screens */
+      @media (max-width: 768px) {
+        .education-item span {
+          flex: 1 1 calc(50% - 20px);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .education-item span {
+          flex: 1 1 100%;
+        }
       }
     </style>
   </head>
@@ -66,17 +89,22 @@
     <div class="content">
       <h1>Skills</h1>
       <div class="education-item">
-        
-          REACT.JS        NEXT.JS     NODE.JS    
-
-    C                    PHP                 JAVASCRIPT      UNITY
-   
-    PYTHON       DJANGO          C++                     C#
-    
-    SQL               JAVA                 HTML                  PYTHON
-                          
-                        MONGODB       MYSQL
-            
+        <span>REACT.JS</span>
+        <span>NEXT.JS</span>
+        <span>NODE.JS</span>
+        <span>C</span>
+        <span>PHP</span>
+        <span>JAVASCRIPT</span>
+        <span>UNITY</span>
+        <span>PYTHON</span>
+        <span>DJANGO</span>
+        <span>C++</span>
+        <span>C#</span>
+        <span>SQL</span>
+        <span>JAVA</span>
+        <span>HTML</span>
+        <span>MONGODB</span>
+        <span>MYSQL</span>
       </div>
     </div>
   </body>
